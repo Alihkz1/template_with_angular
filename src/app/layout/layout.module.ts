@@ -6,6 +6,7 @@ import { LayoutRouting } from './layout.routing';
 import { HeaderComponent } from './components/container/header/header.component';
 import { MaterialModule } from '../shared/modules/material.module';
 import { PrimeNgModule } from '../shared/modules/prime-ng/prime-ng.module';
+import { MainComponent } from './components/container/main/main.component';
 
 const routes: Routes = [
   {
@@ -21,7 +22,7 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  declarations: [LayoutRouting, ContainerComponent, HeaderComponent],
+  declarations: [LayoutRouting, ContainerComponent, HeaderComponent, MainComponent],
   imports: [
     CommonModule,
     MaterialModule,
