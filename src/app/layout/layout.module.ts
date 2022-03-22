@@ -11,10 +11,10 @@ const routes: Routes = [
     path: '',
     component: ContainerComponent,
     children: [
-      {
-        path: '',
-        component: ContainerComponent,
-      },
+      // {
+      //   path: '',
+      //   component: ContainerComponent,
+      // },
     ],
   },
 ];
