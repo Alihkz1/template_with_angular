@@ -4,7 +4,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { ContainerComponent } from './components/container/container.component';
 import { MaterialModule } from '../shared/modules/material.module';
 import { PrimeNgModule } from '../shared/modules/prime-ng/prime-ng.module';
-import { MainComponent } from './components/container/main/main.component';
+import { PageContentComponent } from './components/page-content/page-content.component';
 
 const routes: Routes = [
   {
@@ -20,7 +20,7 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  declarations: [ContainerComponent, MainComponent],
+  declarations: [ContainerComponent, PageContentComponent],
   imports: [
     CommonModule,
     MaterialModule,
