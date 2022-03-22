@@ -1,0 +1,35 @@
+@import url("https://fonts.googleapis.com/css2?family=Hurricane&family=Poppins:ital,wght@1,600&family=Raleway&family=Redressed&family=Roboto:ital,wght@1,300&family=Zen+Kurenaido&display=swap");
+
+.row {
+  margin: 100px;
+}
+
+.card {
+  height: 500px;
+  color: black;
+  background-color: rgb(255, 255, 255);
+  border-radius: 30px;
+}
+
+.img img {
+  max-height: 300px;
+}
+
+button {
+  background-color: rgba(13, 97, 194, 0.397);
+  width: 60%;
+  color: black;
+}
+
+h1,
+p {
+  font-family: "Zen Kurenaido", sans-serif;
+}
+
+h1 {
+  font-size: 50px;
+}
+
+p {
+  font-size: 30px;
+}

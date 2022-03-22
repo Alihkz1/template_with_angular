@@ -5,22 +5,35 @@ import { ContainerComponent } from './components/container/container.component';
 import { MaterialModule } from '../shared/modules/material.module';
 import { PrimeNgModule } from '../shared/modules/prime-ng.module';
 import { PageContentComponent } from './components/page-content/page-content.component';
+import { LandingPageComponent } from './components/landing-page/landing-page.component';
 
 const routes: Routes = [
   {
     path: '',
     component: ContainerComponent,
     children: [
-      // {
-      //   path: '',
-      //   component: ,
-      // },
+      {
+        path: 'landing-page',
+        component: LandingPageComponent,
+      },
+      {
+        path: 'menu',
+        component: PageContentComponent,
+      },
+      {
+        path: '**',
+        component: LandingPageComponent,
+      },
     ],
   },
 ];
 
 @NgModule({
-  declarations: [ContainerComponent, PageContentComponent],
+  declarations: [
+    ContainerComponent,
+    PageContentComponent,
+    LandingPageComponent,
+  ],
   imports: [
     CommonModule,
     MaterialModule,
