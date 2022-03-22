@@ -2,8 +2,6 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule, Routes } from '@angular/router';
 import { ContainerComponent } from './components/container/container.component';
-import { LayoutRouting } from './layout.routing';
-import { HeaderComponent } from './components/container/header/header.component';
 import { MaterialModule } from '../shared/modules/material.module';
 import { PrimeNgModule } from '../shared/modules/prime-ng/prime-ng.module';
 import { MainComponent } from './components/container/main/main.component';
@@ -11,7 +9,7 @@ import { MainComponent } from './components/container/main/main.component';
 const routes: Routes = [
   {
     path: '',
-    component: LayoutRouting,
+    component: ContainerComponent,
     children: [
       {
         path: '',
@@ -22,7 +20,7 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  declarations: [LayoutRouting, ContainerComponent, HeaderComponent, MainComponent],
+  declarations: [ContainerComponent, MainComponent],
   imports: [
     CommonModule,
     MaterialModule,
