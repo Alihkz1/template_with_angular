@@ -13,6 +13,13 @@
                 <button mat-raised-button (click)="onStart()">
                   <p>start</p>
                 </button>
+                <div *ngIf="started" class="col-md-7__progress-bar">
+                  <mat-progress-bar
+                    mode="determinate"
+                    [value]="value"
+                    color="accent"
+                  ></mat-progress-bar>
+                </div>
               </mat-card-actions>
             </div>
           </div>
