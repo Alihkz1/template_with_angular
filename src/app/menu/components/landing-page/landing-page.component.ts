@@ -20,7 +20,7 @@ export class LandingPageComponent implements OnInit {
       this.value += 5;
       if (this.value === 100) {
         clearInterval(interval);
-        this.router.navigate(['/menu']);
+        this.router.navigate(['/menu/menu']);
       }
     }, 50);
   }

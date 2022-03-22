@@ -1,0 +1,62 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,600&family=Redressed&family=Roboto:ital,wght@1,300&family=Zen+Kurenaido&display=swap");
+
+mat-card {
+  margin: 50px 0px;
+  height: 200px;
+  border-radius: 10px;
+  background-color: rgb(255, 255, 255);
+  color: black;
+  animation-name: change_place;
+  animation-duration: 2s;
+}
+.col-md-6 :hover,
+.col-md-3 :hover {
+  background-color: rgb(230, 230, 230);
+}
+
+::ng-deep mat-card {
+  box-shadow: none;
+}
+img {
+  max-height: 120px;
+}
+
+.row {
+  margin: 0px 60px;
+}
+
+h3 {
+  font-family: "Zen Kurenaido", sans-serif;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+p {
+  font-family: "Zen Kurenaido", sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.card-value h1 {
+  height: 100%;
+  font-family: "Zen Kurenaido", sans-serif;
+  font-size: 70px;
+  font-style: normal;
+  font-weight: bolder;
+}
+.example-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@keyframes change_place {
+  0% {
+    background-color: rgba(13, 97, 194, 0.397);
+    left: 200px;
+  }
+  100% {
+    background-color: rgb(255, 255, 255);
+    left: 0px;
+  }
+}
