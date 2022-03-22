@@ -18,6 +18,8 @@
   color: black;
   background-color: rgb(255, 255, 255);
   border-radius: 30px;
+  animation-name: change_place;
+  animation-duration: 2s;
 }
 
 .img img {
@@ -41,4 +43,15 @@ h1 {
 
 p {
   font-size: 30px;
+}
+
+@keyframes change_place {
+  0% {
+    background-color: rgba(13, 97, 194, 0.397);
+    left: 200px;
+  }
+  100% {
+    background-color: rgb(255, 255, 255);
+    left: 0px;
+  }
 }
