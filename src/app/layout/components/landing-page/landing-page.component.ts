@@ -16,20 +16,12 @@ export class LandingPageComponent implements OnInit {
 
   public onStart() {
     this.started = true;
-    setTimeout(() => {
-      this.value = 20;
-    }, 200);
-    setTimeout(() => {
-      this.value = 40;
-    }, 400);
-    setTimeout(() => {
-      this.value = 60;
-    }, 600);
-    setTimeout(() => {
-      this.value = 80;
-    }, 800);
-    setTimeout(() => {
-      this.router.navigate(['/menu']);
-    }, 1000);
+    let interval = setInterval(() => {
+      this.value += 5;
+      if (this.value === 100) {
+        clearInterval(interval);
+        this.router.navigate(['/menu']);
+      }
+    }, 50);
   }
 }
