@@ -4,8 +4,8 @@ import { RouterModule, Routes } from '@angular/router';
 import { ContainerComponent } from './components/container/container.component';
 import { MaterialModule } from '../shared/modules/material.module';
 import { PrimeNgModule } from '../shared/modules/prime-ng.module';
-import { PageContentComponent } from './components/page-content/page-content.component';
 import { LandingPageComponent } from './components/landing-page/landing-page.component';
+import { MenuComponent } from './components/menu/menu.component';
 
 const routes: Routes = [
   {
@@ -18,7 +18,7 @@ const routes: Routes = [
       },
       {
         path: 'menu',
-        component: PageContentComponent,
+        component: MenuComponent,
       },
       {
         path: '**',
@@ -29,11 +29,7 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  declarations: [
-    ContainerComponent,
-    PageContentComponent,
-    LandingPageComponent,
-  ],
+  declarations: [ContainerComponent, LandingPageComponent, MenuComponent],
   imports: [
     CommonModule,
     MaterialModule,

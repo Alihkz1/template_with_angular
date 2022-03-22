@@ -1,11 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-page-content',
-  templateUrl: './page-content.component.html',
-  styleUrls: ['./page-content.component.scss'],
+  selector: 'app-menu',
+  templateUrl: './menu.component.html',
+  styleUrls: ['./menu.component.scss'],
 })
-export class PageContentComponent implements OnInit {
+export class MenuComponent implements OnInit {
   public cards: any[] = [
     {
       title: 'Shiba Inu',
@@ -57,6 +57,4 @@ export class PageContentComponent implements OnInit {
   constructor() {}
 
   ngOnInit(): void {}
-
-  public showResponse(event: any) {}
 }
