@@ -43,7 +43,7 @@ export class DashboardComponent implements OnInit {
   ];
   constructor() {}
 
-  color: ThemePalette = 'primary';
+  color: ThemePalette = 'accent';
   mode: ProgressSpinnerMode = 'determinate';
 
   ngOnInit(): void {}
