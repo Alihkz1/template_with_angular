@@ -1,25 +1,21 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule, Routes } from '@angular/router';
-import { ContainerComponent } from './components/container/container.component';
-import { LandingPageComponent } from './components/landing-page/landing-page.component';
+import { MenuRouting } from './menu.routing';
 import { MenuComponent } from './components/menu/menu.component';
+import { LandingPageComponent } from './components/landing-page/landing-page.component';
 
 const routes: Routes = [
   {
     path: '',
-    component: ContainerComponent,
+    component: MenuRouting,
     children: [
-      {
-        path: 'landing-page',
-        component: LandingPageComponent,
-      },
       {
         path: 'menu',
         component: MenuComponent,
       },
       {
-        path: '**',
+        path: 'landing',
         component: LandingPageComponent,
       },
     ],
@@ -31,4 +27,4 @@ const routes: Routes = [
   imports: [CommonModule, RouterModule.forChild(routes)],
   exports: [RouterModule],
 })
-export class LayoutRoutingModule {}
+export class MenuRoutingModule {}

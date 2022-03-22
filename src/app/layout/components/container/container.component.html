@@ -1,22 +1,31 @@
 <mat-drawer-container class="drawer-container" autosize>
   <mat-drawer #drawer class="sidenav" mode="side">
-    <mat-list>
-      <mat-list-item>Item 1</mat-list-item>
-      <mat-divider></mat-divider>
-      <mat-list-item>Item 2</mat-list-item>
-      <mat-divider></mat-divider>
-      <mat-list-item>Item 3</mat-list-item>
-      <mat-divider></mat-divider>
-      <mat-list-item>Item 3</mat-list-item>
-      <mat-divider></mat-divider>
-      <mat-list-item>Item 3</mat-list-item>
-      <mat-divider></mat-divider>
-      <mat-list-item>Item 3</mat-list-item>
-      <mat-divider></mat-divider>
-      <mat-list-item>Item 3</mat-list-item>
-      <mat-divider></mat-divider>
-      <mat-list-item>Item 3</mat-list-item>
-    </mat-list>
+    <div class="sideNav__list">
+      <button
+        type="button"
+        class="sideNav__list__item"
+        mat-button
+        routerLink="/menu/landing"
+      >
+        Welcome page
+      </button>
+      <button
+        type="button"
+        class="sideNav__list__item"
+        mat-button
+        routerLink="/menu/menu"
+      >
+        menu
+      </button>
+      <button
+        type="button"
+        class="sideNav__list__item"
+        mat-button
+        routerLink="/admin"
+      >
+        admin panel
+      </button>
+    </div>
   </mat-drawer>
 
   <mat-toolbar class="toolbar">

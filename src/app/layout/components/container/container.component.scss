@@ -27,6 +27,12 @@ mat-drawer {
   width: 300px;
 }
 
-mat-list {
+.sideNav__list {
   margin-top: 100px;
+}
+
+.sideNav__list__item {
+  width: 100%;
+  background-color: rgb(168, 128, 223);
+  margin-bottom: 10px;
 }
