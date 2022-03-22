@@ -8,5 +8,7 @@ import { Router } from '@angular/router';
 })
 export class ContainerComponent implements OnInit {
   constructor(private router: Router) {}
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    this.router.navigate(['menu']);
+  }
 }
