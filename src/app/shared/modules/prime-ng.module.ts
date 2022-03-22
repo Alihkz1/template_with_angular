@@ -1,8 +1,9 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { SidebarModule } from 'primeng/sidebar';
-
-const MODULES = [SidebarModule];
+import { CarouselModule } from 'primeng/carousel';
+import { CaptchaModule } from 'primeng/captcha';
+const MODULES = [SidebarModule, CarouselModule, CaptchaModule];
 
 @NgModule({
   declarations: [],

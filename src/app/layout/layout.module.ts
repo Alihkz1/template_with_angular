@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 import { RouterModule, Routes } from '@angular/router';
 import { ContainerComponent } from './components/container/container.component';
 import { MaterialModule } from '../shared/modules/material.module';
-import { PrimeNgModule } from '../shared/modules/prime-ng/prime-ng.module';
+import { PrimeNgModule } from '../shared/modules/prime-ng.module';
 import { PageContentComponent } from './components/page-content/page-content.component';
 
 const routes: Routes = [
@@ -13,7 +13,7 @@ const routes: Routes = [
     children: [
       // {
       //   path: '',
-      //   component: ContainerComponent,
+      //   component: ,
       // },
     ],
   },

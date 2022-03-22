@@ -1,0 +1,27 @@
+.row {
+  margin: 100px;
+}
+
+.col-md-4 :hover {
+  background-color: rgb(230, 230, 230);
+}
+
+mat-card {
+  background-color: aliceblue;
+  color: black;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  animation-name: change_place;
+  animation-duration: 2s;
+}
+
+@keyframes change_place {
+  0% {
+    background-color: rgb(98, 108, 255);
+    left: 200px;
+  }
+  100% {
+    background-color: rgb(255, 255, 255);
+    left: 0px;
+  }
+}

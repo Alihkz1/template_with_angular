@@ -1,5 +1,16 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,600&family=Redressed&family=Roboto:ital,wght@1,300&family=Zen+Kurenaido&display=swap");
+
 p {
   margin: 30px;
+}
+
+.toolbar {
+  background-color: rgba(13, 97, 194, 0.397);
+}
+
+.dark-mode {
+  margin-right: 0;
+  color: black;
 }
 
 .drawer-container {
@@ -8,5 +19,6 @@ p {
 }
 
 mat-drawer {
-  background-color: white;
+  background-color: rgba(13, 97, 194, 0.397);
+  width: 300px;
 }

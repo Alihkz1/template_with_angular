@@ -1,13 +1,48 @@
 <mat-drawer-container class="drawer-container" autosize>
   <mat-drawer #drawer class="sidenav" mode="side">
-    <p>Auto-resizing sidenav</p>
+    <mat-list>
+      <mat-list-item>Item 1</mat-list-item>
+      <mat-divider></mat-divider>
+      <mat-list-item>Item 2</mat-list-item>
+      <mat-divider></mat-divider>
+      <mat-list-item>Item 3</mat-list-item>
+      <mat-divider></mat-divider>
+      <mat-list-item>Item 3</mat-list-item>
+      <mat-divider></mat-divider>
+      <mat-list-item>Item 3</mat-list-item>
+      <mat-divider></mat-divider>
+      <mat-list-item>Item 3</mat-list-item>
+      <mat-divider></mat-divider>
+      <mat-list-item>Item 3</mat-list-item>
+      <mat-divider></mat-divider>
+      <mat-list-item>Item 3</mat-list-item>
+    </mat-list>
   </mat-drawer>
   <router-outlet></router-outlet>
-  <mat-toolbar color="accent">
-    <div class="sidenav-content">
-      <button type="button" mat-button (click)="drawer.toggle()">
-        <mat-icon>menu</mat-icon>
-      </button>
+  <mat-toolbar class="toolbar">
+    <div class="col-11">
+      <div class="sidenav-content">
+        <button
+          type="button"
+          mat-button
+          (click)="drawer.toggle()"
+          style="color: 'black'"
+        >
+          <mat-icon class="material-icons-outlined">menu</mat-icon>
+        </button>
+        <button type="button" mat-button style="color: 'black'">
+          <mat-icon class="material-icons-outlined"> home </mat-icon>
+        </button>
+      </div>
+    </div>
+    <div class="col-1">
+      <div class="dark-mode">
+        <mat-slide-toggle>
+          <mat-icon class="material-icons-outlined">
+            light_mode
+          </mat-icon></mat-slide-toggle
+        >
+      </div>
     </div>
   </mat-toolbar>
   <app-page-content></app-page-content>
