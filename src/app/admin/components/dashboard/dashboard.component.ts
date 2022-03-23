@@ -8,7 +8,7 @@ import { ProgressSpinnerMode } from '@angular/material/progress-spinner';
   styleUrls: ['./dashboard.component.scss'],
 })
 export class DashboardComponent implements OnInit {
-  public cards: any[] = [
+  public row1_cards: any[] = [
     {
       title: 'Active users',
       count: 400,
@@ -27,7 +27,7 @@ export class DashboardComponent implements OnInit {
     },
   ];
 
-  public cards2: any[] = [
+  public row2_cards: any[] = [
     {
       title: 'Shiba Inu',
       subTitle: 'Dog Breed',

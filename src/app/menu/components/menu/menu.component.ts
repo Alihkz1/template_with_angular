@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { ROUTING } from 'src/shared/enums/routing.enum';
 
 @Component({
@@ -26,9 +27,11 @@ export class MenuComponent implements OnInit {
     },
   ];
 
-  constructor() {}
+  constructor(private router: Router) {}
 
-  public onRouteTo(route: any) {}
+  public onRouteTo(route: any) {
+    this.router.navigate([route]);
+  }
 
   ngOnInit(): void {}
 }
