@@ -1,50 +1,46 @@
 <div class="contanier">
-  <div class="first_row">
-    <div class="row">
-      <div *ngFor="let card of cards" class="col-md-3 col-xs-12">
-        <mat-card class="example-card">
-          <br />
-          <div class="row">
-            <div class="col-12">
-              <h3>{{ card.title }}</h3>
-            </div>
+  <div class="row">
+    <div *ngFor="let card of cards" class="col-md-3 col-xs-12">
+      <mat-card
+        class="mat-card__global"
+        [ngStyle]="{ height: '200px', margin: '50px 0px' }"
+      >
+        <br />
+        <div class="row">
+          <div class="col-12">
+            <h3>{{ card.title }}</h3>
           </div>
-          <hr />
-          <div class="row">
-            <div class="col-12">
-              <p>{{ card.count }}</p>
-            </div>
+        </div>
+        <hr />
+        <div class="row">
+          <div class="col-12">
+            <p>{{ card.count }}</p>
           </div>
-        </mat-card>
-      </div>
+        </div>
+      </mat-card>
     </div>
   </div>
-  <div class="second_row">
-    <div class="row">
-      <div *ngFor="let card of cards2" class="col-md-6">
-        <mat-card class="example-card" style="height: 400px">
-          <div class="card-content">
-            <div class="container">
-              <div class="row">
-                <div class="col-8">
-                  <mat-progress-spinner
-                    class="example-margin"
-                    [color]="color"
-                    [mode]="mode"
-                    [value]="card.value"
-                  >
-                  </mat-progress-spinner>
-                </div>
-                <div class="col-4">
-                  <div class="card-value">
-                    <h1>{{ card.value }}</h1>
-                  </div>
-                </div>
+  <div class="row">
+    <div *ngFor="let card of cards2" class="col-md-6">
+      <mat-card class="mat-card__global" [ngStyle]="height: 400px">
+        <div class="container">
+          <div class="row">
+            <div class="col-8">
+              <mat-progress-spinner
+                [color]="color"
+                [mode]="mode"
+                [value]="card.value"
+              >
+              </mat-progress-spinner>
+            </div>
+            <div class="col-4">
+              <div class="card-value">
+                <h1>{{ card.value }}</h1>
               </div>
             </div>
           </div>
-        </mat-card>
-      </div>
+        </div>
+      </mat-card>
     </div>
   </div>
 </div>

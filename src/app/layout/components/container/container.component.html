@@ -27,25 +27,18 @@
       </button>
     </div>
   </mat-drawer>
-
   <mat-toolbar class="toolbar">
     <div class="col-11">
-      <div class="sidenav-content">
-        <button type="button" mat-button (click)="drawer.toggle()">
-          <mat-icon class="material-icons-outlined">menu</mat-icon>
-        </button>
-        <button type="button" mat-button routerLink="/menu">
-          <mat-icon class="material-icons-outlined"> home </mat-icon>
-        </button>
-      </div>
+      <button type="button" mat-button (click)="drawer.toggle()">
+        <mat-icon>menu</mat-icon>
+      </button>
+      <button type="button" mat-button routerLink="/menu">
+        <mat-icon> home </mat-icon>
+      </button>
     </div>
     <div class="col-1">
-      <div class="dark-mode">
-        <mat-slide-toggle>
-          <mat-icon class="material-icons-outlined">
-            light_mode
-          </mat-icon></mat-slide-toggle
-        >
+      <div class="dark-mode__toggle">
+        <mat-slide-toggle> <mat-icon> light_mode </mat-icon></mat-slide-toggle>
       </div>
     </div>
   </mat-toolbar>

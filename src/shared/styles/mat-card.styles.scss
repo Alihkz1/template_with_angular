@@ -1,0 +1,21 @@
+@import url("https://fonts.googleapis.com/css2?family=Hurricane&family=Poppins:ital,wght@1,600&family=Raleway&family=Redressed&family=Roboto:ital,wght@1,300&family=Zen+Kurenaido&display=swap");
+
+.mat-card__global {
+  color: black;
+  border-radius: 30px;
+  animation-duration: 2s;
+  animation-name: slide_to_left;
+  background-color: rgb(255, 255, 255);
+  font-family: "Zen Kurenaido", sans-serif;
+}
+
+@keyframes slide_to_left {
+  0% {
+    left: 200px;
+    background-color: rgba(13, 97, 194, 0.397);
+  }
+  100% {
+    left: 0px;
+    background-color: rgb(255, 255, 255);
+  }
+}
