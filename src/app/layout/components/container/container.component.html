@@ -1,5 +1,5 @@
 <mat-drawer-container class="drawer-container" autosize>
-  <mat-drawer #drawer class="sidenav" mode="side">
+  <mat-drawer #drawer class="sidenav2" mode="side">
     <div class="sideNav__list">
       <button
         type="button"
@@ -7,7 +7,7 @@
         mat-button
         routerLink="/menu"
       >
-        Welcome page
+        <p>Welcome page</p>
       </button>
       <button
         type="button"
@@ -15,7 +15,7 @@
         mat-button
         routerLink="/menu/menu"
       >
-        menu
+        <p>menu</p>
       </button>
       <button
         type="button"
@@ -23,18 +23,18 @@
         mat-button
         routerLink="/admin"
       >
-        admin panel</button
+        <p>admin panel</p></button
       ><button
         type="button"
         class="sideNav__list__item"
         mat-button
         routerLink="/weather"
       >
-        weather
+        <p>weather</p>
       </button>
     </div>
   </mat-drawer>
-  <mat-toolbar class="toolbar">
+  <mat-toolbar color="primary">
     <div class="col-11">
       <button type="button" mat-button (click)="drawer.toggle()">
         <mat-icon>menu</mat-icon>
@@ -45,7 +45,9 @@
     </div>
     <div class="col-1">
       <div class="dark-mode__toggle">
-        <mat-slide-toggle> <mat-icon> light_mode </mat-icon></mat-slide-toggle>
+        <mat-slide-toggle [(ngModel)]="darkMode">
+          <mat-icon> light_mode </mat-icon></mat-slide-toggle
+        >
       </div>
     </div>
   </mat-toolbar>
