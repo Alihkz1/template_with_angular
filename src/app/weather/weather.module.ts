@@ -9,6 +9,5 @@ import { ShowCityWeatherComponent } from './components/show-city-weather/show-ci
 @NgModule({
   declarations: [WeatherRouting, SearchCityComponent, ShowCityWeatherComponent],
   imports: [CommonModule, WeatherRoutingModule, MaterialModule],
-  exports: [WeatherRoutingModule],
 })
 export class WeatherModule {}

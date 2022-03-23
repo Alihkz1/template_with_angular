@@ -9,6 +9,7 @@ import { ROUTING } from 'src/shared/enums/routing.enum';
 })
 export class ContainerComponent implements OnInit {
   public darkMode: boolean = false;
+
   constructor(private router: Router) {}
 
   @HostBinding('class') get themeMode() {

@@ -8,6 +8,5 @@ import { MaterialModule } from 'src/shared/modules/material.module';
 @NgModule({
   declarations: [AdminRouting, DashboardComponent],
   imports: [CommonModule, AdminRoutingModule, MaterialModule],
-  exports: [AdminRoutingModule],
 })
 export class AdminModule {}

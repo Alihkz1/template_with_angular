@@ -8,8 +8,8 @@ import { ProgressSpinnerMode } from '@angular/material/progress-spinner';
   styleUrls: ['./dashboard.component.scss'],
 })
 export class DashboardComponent implements OnInit {
-  color: ThemePalette = 'accent';
-  mode: ProgressSpinnerMode = 'determinate';
+  public color: ThemePalette = 'accent';
+  public mode: ProgressSpinnerMode = 'determinate';
 
   public row1_cards: any[] = [
     {
@@ -44,6 +44,7 @@ export class DashboardComponent implements OnInit {
       value: 80,
     },
   ];
+
   constructor() {}
 
   ngOnInit(): void {}
