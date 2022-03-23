@@ -3,21 +3,21 @@
     <div *ngFor="let card of cards" class="col-md-4 col-xs-12">
       <mat-card
         class="mat-card__global"
-        [ngStyle]="{ 'margin-bottom': '30px' }"
+        [ngStyle]="{ 'margin-bottom': '20px', height: '450px' }"
       >
         <mat-card-header>
           <mat-card-title>{{ card.title }}</mat-card-title>
-          <mat-card-subtitle>{{ card.subTitle }}</mat-card-subtitle>
+          <hr />
+          <p>{{ card.subTitle }}</p>
         </mat-card-header>
         <img mat-card-image src="../../../../assets/svg/dog.svg" alt="dog" />
-        <mat-card-content>
+        <mat-card-content [ngStyle]="{ height: '100px' }">
           <p>
             {{ card.p }}
           </p>
         </mat-card-content>
         <mat-card-actions class="text-center">
-          <button mat-button>LIKE</button>
-          <button mat-button>SHARE</button>
+          <button mat-button (click)="onRouteTo(card.route)">browse</button>
         </mat-card-actions>
       </mat-card>
     </div>

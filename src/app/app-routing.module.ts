@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { ROUTING } from 'src/shared/enums/routing.enum';
 import { ContainerComponent } from './layout/components/container/container.component';
 
 const routes: Routes = [
@@ -13,14 +14,19 @@ const routes: Routes = [
           import('./layout/layout.module').then((m) => m.LayoutModule),
       },
       {
-        path: 'admin',
+        path: ROUTING.ADMIN,
         loadChildren: () =>
           import('./admin/admin.module').then((m) => m.AdminModule),
       },
       {
-        path: 'menu',
+        path: ROUTING.MENU,
         loadChildren: () =>
           import('./menu/menu.module').then((m) => m.MenuModule),
+      },
+      {
+        path: ROUTING.WEATHER,
+        loadChildren: () =>
+          import('./weather/weather.module').then((m) => m.WeatherModule),
       },
     ],
   },

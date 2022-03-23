@@ -3,4 +3,5 @@ export enum ROUTING {
   CONTANIER = 'contanier',
   LANDING_PAGE = 'landing-page',
   MENU = 'menu',
+  WEATHER = 'weather',
 }
