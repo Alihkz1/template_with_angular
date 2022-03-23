@@ -2,6 +2,10 @@
   margin: 100px;
 }
 
+.col-md-12 :hover {
+  background-color: rgb(233, 159, 255);
+}
+
 .col-md-7__content {
   margin-top: 150px;
 }
@@ -9,10 +13,6 @@
 .col-md-7__progress-bar {
   margin-top: 20px;
   width: 60%;
-}
-
-.col-md-12 :hover {
-  background-color: rgb(230, 230, 230);
 }
 
 .img img {
