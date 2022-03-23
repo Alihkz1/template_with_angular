@@ -1,23 +1,21 @@
 <div class="contanier">
   <div class="row">
     <div *ngFor="let card of cards" class="col-md-4 col-xs-12">
-      <mat-card class="example-card">
+      <mat-card
+        class="mat-card__global"
+        [ngStyle]="{ 'margin-bottom': '30px' }"
+      >
         <mat-card-header>
-          <div mat-card-avatar class="example-header-image"></div>
           <mat-card-title>{{ card.title }}</mat-card-title>
           <mat-card-subtitle>{{ card.subTitle }}</mat-card-subtitle>
         </mat-card-header>
-        <img
-          mat-card-image
-          src="../../../../assets/svg/dog.svg"
-          alt="Photo of a Shiba Inu"
-        />
+        <img mat-card-image src="../../../../assets/svg/dog.svg" alt="dog" />
         <mat-card-content>
           <p>
             {{ card.p }}
           </p>
         </mat-card-content>
-        <mat-card-actions>
+        <mat-card-actions class="text-center">
           <button mat-button>LIKE</button>
           <button mat-button>SHARE</button>
         </mat-card-actions>
