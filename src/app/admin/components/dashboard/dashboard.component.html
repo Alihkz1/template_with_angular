@@ -24,6 +24,8 @@
       <mat-card class="mat-card__global" [ngStyle]="{ height: '400px' }">
         <div class="br"><br /><br /></div>
         <mat-card-content>
+          <h3>{{ card.title }}</h3>
+          <hr class="hr" />
           <div class="row">
             <div class="col-md-8">
               <mat-progress-spinner
@@ -35,7 +37,10 @@
             </div>
             <div class="col-md-4">
               <div class="card-value">
-                <h1>{{ card.value }}</h1>
+                <h1>
+                  {{ card.value }}
+                  <span [ngStyle]="{ 'font-size': '20px' }">%</span>
+                </h1>
               </div>
             </div>
           </div>
