@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { ROUTING } from 'src/shared/enums/routing.enum';
 
 @Component({
   selector: 'app-landing-page',
@@ -20,7 +21,7 @@ export class LandingPageComponent implements OnInit {
       this.value += 5;
       if (this.value === 100) {
         clearInterval(interval);
-        this.router.navigate(['/menu/menu']);
+        this.router.navigate([ROUTING.MENU, ROUTING.MENU]);
       }
     }, 50);
   }
