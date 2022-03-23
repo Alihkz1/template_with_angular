@@ -8,11 +8,15 @@
               <form class="form">
                 <mat-form-field appearance="outline">
                   <mat-label>City</mat-label>
-                  <input matInput />
+                  <input matInput [ngStyle]="{ width: '85%' }" />
                 </mat-form-field>
               </form>
               <mat-card-actions>
-                <button mat-raised-button (click)="onStart()">
+                <button
+                  mat-raised-button
+                  (click)="onStart()"
+                  [ngStyle]="{ width: '80%' }"
+                >
                   <p>start</p>
                 </button>
                 <div *ngIf="started" class="col-md-4__progress-bar">
