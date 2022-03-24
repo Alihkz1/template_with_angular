@@ -10,20 +10,26 @@ import { ROUTING } from 'src/shared/enums/routing.enum';
 export class MenuComponent implements OnInit {
   public cards: any[] = [
     {
-      title: 'Weather check',
+      title: 'Weather Check',
       subTitle: 'check any city weather',
       p: 'in this app you can see live weather of any city all arount the world you want by typing its name',
       route: ROUTING.WEATHER,
+      img: '../../../../assets/svg/dog.svg',
+      alt: 'weather',
     },
     {
-      title: 'Shiba Inu',
+      title: 'Crypto Check',
       subTitle: 'Dog Breed',
       p: 'The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan. A small, agile dog that copes very well with mountainous terrain, the Shiba Inu was originally bred for hunting',
+      img: '../../../../assets/svg/btc.svg',
+      alt: 'btc',
     },
     {
-      title: 'Shiba Inu',
+      title: 'Currency Check',
       subTitle: 'Dog Breed',
       p: 'The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan. A small, agile dog that copes very well with mountainous terrain, the Shiba Inu was originally bred for hunting',
+      img: '../../../../assets/svg/dollar.svg',
+      alt: 'dollar',
     },
   ];
 

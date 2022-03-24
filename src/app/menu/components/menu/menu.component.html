@@ -10,7 +10,7 @@
           <hr />
           <p>{{ card.subTitle }}</p>
         </mat-card-header>
-        <img mat-card-image src="../../../../assets/svg/dog.svg" alt="dog" />
+        <img mat-card-image src="{{ card.img }}" alt="{{ card.alt }}" />
         <mat-card-content [ngStyle]="{ height: '100px' }">
           <p>
             {{ card.p }}
