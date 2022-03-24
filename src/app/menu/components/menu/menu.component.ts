@@ -19,14 +19,14 @@ export class MenuComponent implements OnInit {
     },
     {
       title: 'Crypto Check',
-      subTitle: 'Dog Breed',
+      subTitle: 'check crypto curreny ',
       p: 'The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan. A small, agile dog that copes very well with mountainous terrain, the Shiba Inu was originally bred for hunting',
       img: '../../../../assets/svg/btc.svg',
       alt: 'btc',
     },
     {
       title: 'Currency Check',
-      subTitle: 'Dog Breed',
+      subTitle: 'check currency prices',
       p: 'The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan. A small, agile dog that copes very well with mountainous terrain, the Shiba Inu was originally bred for hunting',
       img: '../../../../assets/svg/dollar.svg',
       alt: 'dollar',
