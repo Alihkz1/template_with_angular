@@ -8,6 +8,8 @@ import { ProgressSpinnerMode } from '@angular/material/progress-spinner';
   styleUrls: ['./dashboard.component.scss'],
 })
 export class DashboardComponent implements OnInit {
+  public EarnedPrice: number = 0;
+  public EarnedAppViews: number = 0;
   public color: ThemePalette = 'accent';
   public mode: ProgressSpinnerMode = 'determinate';
 
@@ -19,14 +21,6 @@ export class DashboardComponent implements OnInit {
     {
       title: 'Sold Products',
       count: 350,
-    },
-    {
-      title: 'Earned Price',
-      count: 4000 + '$',
-    },
-    {
-      title: 'Site Views',
-      count: '+' + 5000,
     },
   ];
 
@@ -47,5 +41,16 @@ export class DashboardComponent implements OnInit {
 
   constructor() {}
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    this.setInterval();
+  }
+
+  private setInterval(): void {
+    let interval = setInterval(() => {
+      this.EarnedPrice += 40;
+      this.EarnedAppViews += 50;
+      if (this.EarnedPrice === 4000 && this.EarnedAppViews == 5000)
+        clearInterval(interval);
+    }, 10);
+  }
 }

@@ -18,6 +18,42 @@
         </div>
       </mat-card>
     </div>
+    <div class="col-md-3">
+      <mat-card
+        class="mat-card__global"
+        [ngStyle]="{ height: '200px', margin: '50px 0px' }"
+      >
+        <div class="row">
+          <div class="col-12">
+            <h3>App Views</h3>
+          </div>
+        </div>
+        <hr />
+        <div class="row">
+          <div class="col-12">
+            <p>+{{ EarnedAppViews }}</p>
+          </div>
+        </div>
+      </mat-card>
+    </div>
+    <div class="col-md-3">
+      <mat-card
+        class="mat-card__global"
+        [ngStyle]="{ height: '200px', margin: '50px 0px' }"
+      >
+        <div class="row">
+          <div class="col-12">
+            <h3>Sold Price</h3>
+          </div>
+        </div>
+        <hr />
+        <div class="row">
+          <div class="col-12">
+            <p>+{{ EarnedPrice }}</p>
+          </div>
+        </div>
+      </mat-card>
+    </div>
   </div>
   <div class="row">
     <div *ngFor="let card of row2_cards" class="col-md-6">
