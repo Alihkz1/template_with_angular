@@ -7,6 +7,7 @@
         class="sideNav__list__item"
         mat-button
         routerLink="/menu"
+        (click)="showProgressBar()"
       >
         <p>Welcome page</p>
       </button>
@@ -15,6 +16,7 @@
         class="sideNav__list__item"
         mat-button
         routerLink="/menu/menu"
+        (click)="showProgressBar()"
       >
         <p>menu</p>
       </button>
@@ -23,6 +25,7 @@
         class="sideNav__list__item"
         mat-button
         routerLink="/admin"
+        (click)="showProgressBar()"
       >
         <p>admin panel</p></button
       ><button
@@ -30,6 +33,7 @@
         class="sideNav__list__item"
         mat-button
         routerLink="/weather"
+        (click)="showProgressBar()"
       >
         <p>weather</p></button
       ><button
@@ -37,6 +41,7 @@
         class="sideNav__list__item"
         mat-button
         routerLink="/registrations"
+        (click)="showProgressBar()"
       >
         <p>registration forms</p>
       </button>
@@ -59,5 +64,12 @@
       </div>
     </div>
   </mat-toolbar>
+  <div *ngIf="sideBarBtnsClicked && value !== 100" class="progress-bar">
+    <mat-progress-bar
+      mode="determinate"
+      [value]="value"
+      color="accent"
+    ></mat-progress-bar>
+  </div>
   <router-outlet></router-outlet>
 </mat-drawer-container>
