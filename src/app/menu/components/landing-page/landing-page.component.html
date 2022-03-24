@@ -1,36 +1,34 @@
 <div class="container">
-  <div class="row">
-    <div class="col-md-12">
-      <mat-card class="mat-card__global">
-        <div class="row">
-          <div class="col-md-7">
-            <div class="col-md-7__content">
-              <mat-card-title><h1>WELCOME</h1></mat-card-title>
-              <mat-card-actions>
-                <button mat-raised-button (click)="onStart()">
-                  <p>start</p>
-                </button>
-                <div *ngIf="started" class="col-md-7__progress-bar">
-                  <mat-progress-bar
-                    mode="determinate"
-                    [value]="value"
-                    color="accent"
-                  ></mat-progress-bar>
-                </div>
-              </mat-card-actions>
-            </div>
-          </div>
-          <div class="col-md-5">
-            <div class="img">
-              <img
-                mat-card-image
-                src="../../../../assets/svg/welcome.svg"
-                alt="welcome"
-              />
-            </div>
+  <div class="col-12">
+    <mat-card class="mat-card__global">
+      <div class="row">
+        <div class="col-7">
+          <div class="col-7__content">
+            <mat-card-title><h1>WELCOME</h1></mat-card-title>
+            <mat-card-actions>
+              <button mat-raised-button (click)="onStart()">
+                <p>start</p>
+              </button>
+              <div *ngIf="started" class="col-7__progress-bar">
+                <mat-progress-bar
+                  mode="determinate"
+                  [value]="value"
+                  color="accent"
+                ></mat-progress-bar>
+              </div>
+            </mat-card-actions>
           </div>
         </div>
-      </mat-card>
-    </div>
+        <div class="col-5">
+          <div class="img">
+            <img
+              mat-card-image
+              src="../../../../assets/svg/welcome.svg"
+              alt="welcome"
+            />
+          </div>
+        </div>
+      </div>
+    </mat-card>
   </div>
 </div>

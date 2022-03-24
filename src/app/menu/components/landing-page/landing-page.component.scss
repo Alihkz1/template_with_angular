@@ -32,3 +32,25 @@ h1 {
 p {
   font-size: 30px;
 }
+
+@media screen and (max-width: 770px) {
+  .col-12 {
+    margin-top: 50%;
+  }
+  .mat-card__global {
+    background-color: rgb(233, 159, 255);
+  }
+  h1,
+  p {
+    font-size: 15px;
+  }
+  button {
+    width: 100px;
+  }
+  img {
+    width: 200px;
+  }
+  .col-7__progress-bar {
+    margin-top: 20px;
+  }
+}

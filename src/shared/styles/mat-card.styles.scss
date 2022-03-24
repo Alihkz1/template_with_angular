@@ -3,19 +3,24 @@
 .mat-card__global {
   color: black;
   border-radius: 30px;
-  /* animation-duration: 2s;
-   animation-name: slide_to_left; */
+
   background-color: rgb(245, 245, 245);
   font-family: "Zen Kurenaido", sans-serif;
 }
 
-/* @keyframes slide_to_left {
-//   0% {
-//     left: 200px;
-//     background-color: rgba(13, 97, 194, 0.397);
-//   }
-//   100% {
-//     left: 0px;
-//     background-color: rgb(255, 255, 255);
-//   }
- }*/
+@media screen and (max-width: 770px) {
+  .mat-card__global {
+    animation-duration: 2s;
+    animation-name: slide_to_left;
+  }
+  @keyframes slide_to_left {
+    0% {
+      left: 200px;
+      background-color: rgba(13, 97, 194, 0.397);
+    }
+    100% {
+      left: 0px;
+      background-color: rgb(255, 255, 255);
+    }
+  }
+}

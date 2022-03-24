@@ -43,3 +43,13 @@ mat-drawer {
 mat-toolbar {
   background-color: rgb(70, 89, 196);
 }
+
+@media screen and (max-width: 770px) {
+  mat-drawer {
+    width: 120px;
+    .sideNav__list__item {
+      font-size: 10px;
+      left: 0px;
+    }
+  }
+}
