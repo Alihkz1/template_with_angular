@@ -2,15 +2,19 @@
   margin: 100px;
 }
 
-.col-md-12 :hover {
+.col-12 {
+  margin-top: 10%;
+}
+
+.col-12 :hover {
   background-color: rgb(233, 159, 255);
 }
 
-.col-md-7__content {
+.col-7__content {
   margin-top: 150px;
 }
 
-.col-md-7__progress-bar {
+.col-7__progress-bar {
   margin-top: 20px;
   width: 60%;
 }
@@ -37,19 +41,20 @@ p {
   .col-12 {
     margin-top: 50%;
   }
-  .mat-card__global {
-    background-color: rgb(233, 159, 255);
-  }
+
   h1,
   p {
     font-size: 15px;
   }
+
   button {
     width: 100px;
   }
+
   img {
     width: 200px;
   }
+
   .col-7__progress-bar {
     margin-top: 20px;
   }

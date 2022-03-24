@@ -2,17 +2,16 @@
   margin: 100px;
 }
 
+.col-12 {
+  margin-top: 10%;
+}
+
 .col-md-12 :hover {
   background-color: rgb(233, 159, 255);
 }
 
 .col-md-4__content {
   margin-top: 150px;
-}
-
-.col-md-4__progress-bar {
-  margin-top: 20px;
-  width: 60%;
 }
 
 .img img {
@@ -31,4 +30,47 @@ h1 {
 
 p {
   font-size: 30px;
+}
+
+.mat-card__global {
+  display: flex;
+}
+
+@media screen and (max-width: 770px) {
+  .col-12 {
+    margin-top: 50%;
+  }
+
+  h1,
+  p {
+    font-size: 15px;
+  }
+
+  button {
+    width: 100px;
+  }
+
+  img {
+    width: 200px;
+  }
+
+  mat-card-actions,
+  form {
+    width: 300px;
+  }
+
+  .col-4__content {
+    display: block;
+    justify-content: center;
+    align-items: center;
+  }
+
+  img {
+    width: 100px;
+    margin-left: 60%;
+  }
+
+  .mat-progress-bar {
+    margin-top: 20px;
+  }
 }

@@ -2,7 +2,7 @@
   margin: 100px;
 }
 
-.col-md-4 :hover {
+.col-4 :hover {
   background-color: rgb(233, 159, 255);
 }
 
@@ -14,8 +14,5 @@ img {
   .row {
     width: 80%;
     margin-left: 10%;
-  }
-  .mat-card__global {
-    background-color: rgb(233, 159, 255);
   }
 }

@@ -12,6 +12,7 @@
   .mat-card__global {
     animation-duration: 2s;
     animation-name: slide_to_left;
+    background-color: rgb(233, 159, 255);
   }
   @keyframes slide_to_left {
     0% {

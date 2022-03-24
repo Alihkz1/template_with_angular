@@ -1,41 +1,38 @@
 <div class="container">
-  <div class="row">
-    <div class="col-md-12">
-      <mat-card class="mat-card__global">
-        <div class="row">
-          <div class="col-md-4">
-            <div class="col-md-4__content">
-              <form class="form">
-                <mat-form-field appearance="outline">
-                  <mat-label>City</mat-label>
-                  <input matInput [ngStyle]="{ width: '85%' }" />
-                </mat-form-field>
-              </form>
-              <mat-card-actions>
-                <button
-                  mat-raised-button
-                  (click)="onStart()"
-                  [ngStyle]="{ width: '80%' }"
-                >
-                  <p>start</p>
-                </button>
-                <div *ngIf="started" class="col-md-4__progress-bar">
-                  <mat-progress-bar
-                    mode="determinate"
-                    [value]="value"
-                    color="accent"
-                  ></mat-progress-bar>
-                </div>
-              </mat-card-actions>
+  <div class="col-12">
+    <mat-card class="mat-card__global">
+      <div class="col-4">
+        <div class="col-4__content">
+          <form class="form">
+            <mat-form-field appearance="outline">
+              <mat-label>City</mat-label>
+              <input matInput [ngStyle]="{ width: '85%' }" />
+            </mat-form-field>
+          </form>
+          <mat-card-actions>
+            <button
+              mat-raised-button
+              (click)="onStart()"
+              [ngStyle]="{ width: '80%' }"
+            >
+              <p>start</p>
+            </button>
+            <div *ngIf="started" class="col-4__progress-bar">
+              <mat-progress-bar
+                mode="determinate"
+                [value]="value"
+                color="accent"
+                [ngStyle]="{ width: '60%', margin: '20px' }"
+              ></mat-progress-bar>
             </div>
-          </div>
-          <div class="col-md-8">
-            <div class="img">
-              <img src="../../../.././assets/svg/weather.svg" alt="weather" />
-            </div>
-          </div>
+          </mat-card-actions>
         </div>
-      </mat-card>
-    </div>
+      </div>
+      <div class="col-8">
+        <div class="img">
+          <img src="../../../.././assets/svg/weather.svg" alt="weather" />
+        </div>
+      </div>
+    </mat-card>
   </div>
 </div>
