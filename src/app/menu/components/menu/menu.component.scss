@@ -9,3 +9,13 @@
 img {
   width: 80%;
 }
+
+@media screen and (max-width: 770px) {
+  .row {
+    width: 80%;
+    margin-left: 10%;
+  }
+  .mat-card__global {
+    background-color: rgb(233, 159, 255);
+  }
+}
