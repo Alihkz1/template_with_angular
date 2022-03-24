@@ -28,6 +28,13 @@ const routes: Routes = [
         loadChildren: () =>
           import('./weather/weather.module').then((m) => m.WeatherModule),
       },
+      {
+        path: ROUTING.REGISTRATIONS,
+        loadChildren: () =>
+          import('./registrations/registrations.module').then(
+            (m) => m.RegistrationsModule
+          ),
+      },
     ],
   },
   {
