@@ -19,6 +19,7 @@ export class MenuComponent implements OnInit {
       route: ROUTING.WEATHER,
       img: '../../../../assets/svg/dog.svg',
       alt: 'weather',
+      id: 'left-card',
     },
     {
       title: 'Admin Panel',
@@ -27,6 +28,7 @@ export class MenuComponent implements OnInit {
       route: ROUTING.ADMIN,
       img: '../../../../assets/svg/btc.svg',
       alt: 'admin',
+      id: 'central-card',
     },
     {
       title: 'registration forms',
@@ -35,6 +37,7 @@ export class MenuComponent implements OnInit {
       route: ROUTING.REGISTRATIONS,
       img: '../../../../assets/svg/dollar.svg',
       alt: 'registration',
+      id: 'right-card',
     },
   ];
 

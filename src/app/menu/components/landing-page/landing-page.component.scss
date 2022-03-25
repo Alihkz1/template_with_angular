@@ -31,3 +31,18 @@ button {
 img {
   height: 200px;
 }
+
+.card-price {
+  margin-top: 20px;
+  font-size: 60px;
+}
+
+#left-card:hover {
+  background-color: greenyellow;
+}
+#central-card:hover {
+  background-color: yellow;
+}
+#right-card:hover {
+  background-color: pink;
+}

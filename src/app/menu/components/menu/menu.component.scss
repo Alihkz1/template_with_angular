@@ -14,6 +14,16 @@ img {
   margin-bottom: 20px;
 }
 
+#left-card:hover {
+  background-color: greenyellow;
+}
+#central-card:hover {
+  background-color: yellow;
+}
+#right-card:hover {
+  background-color: pink;
+}
+
 @media screen and (max-width: 770px) {
   .row {
     width: 80%;
