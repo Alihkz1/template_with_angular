@@ -13,18 +13,18 @@
         [ngStyle]="{ 'margin-bottom': '20px', height: '470px' }"
       >
         <mat-card-header>
-          <mat-card-title>{{ card.title }}</mat-card-title>
+          <mat-card-title>{{ card?.title }}</mat-card-title>
           <hr />
           <p>{{ card.subTitle }}</p>
         </mat-card-header>
-        <img mat-card-image src="{{ card.img }}" alt="{{ card.alt }}" />
+        <img mat-card-image src="{{ card?.img }}" alt="{{ card?.alt }}" />
         <mat-card-content [ngStyle]="{ height: '100px' }">
           <p>
-            {{ card.p }}
+            {{ card?.p }}
           </p>
         </mat-card-content>
         <mat-card-actions class="text-center">
-          <button mat-button (click)="onRouteTo(card.route)">browse</button>
+          <button mat-button (click)="onRouteTo(card?.route)">browse</button>
         </mat-card-actions>
       </mat-card>
     </div>
