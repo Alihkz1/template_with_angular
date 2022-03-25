@@ -5,9 +5,10 @@ import { WeatherRoutingModule } from './weather-routing.module';
 import { WeatherRouting } from './weather.routing';
 import { SearchCityComponent } from './components/search-city/search-city.component';
 import { ShowCityWeatherComponent } from './components/show-city-weather/show-city-weather.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [WeatherRouting, SearchCityComponent, ShowCityWeatherComponent],
-  imports: [CommonModule, WeatherRoutingModule, MaterialModule],
+  imports: [CommonModule, FormsModule, WeatherRoutingModule, MaterialModule],
 })
 export class WeatherModule {}

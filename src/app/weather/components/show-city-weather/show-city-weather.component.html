@@ -1,1 +1,46 @@
-<p>show-city-weather works!</p>
+<div class="container">
+  <div class="row">
+    <div class="city">
+      <div class="col-12">
+        <h1>{{ name }}</h1>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <mat-icon>flare</mat-icon>
+    </div>
+    <div class="col-md-6">
+      <h1>temprature</h1>
+      <p>{{ temp }}</p>
+    </div>
+  </div>
+  <hr />
+  <div class="row">
+    <div class="col-md-3">
+      <mat-icon>cloud</mat-icon>
+    </div>
+    <div class="col-md-6">
+      <h1>humidity</h1>
+      <p>{{ humidity }}</p>
+    </div>
+  </div>
+  <hr />
+  <div class="row">
+    <div class="col-md-3">
+      <mat-icon>brightness_5</mat-icon>
+    </div>
+    <div class="col-md-6">
+      <h1>maximum</h1>
+      <p>{{ max }}</p>
+    </div>
+  </div>
+  <hr />
+  <div class="row">
+    <div class="col-md-3">
+      <mat-icon>brightness_6</mat-icon>
+    </div>
+    <div class="col-md-6">
+      <h1>minimum</h1>
+      <p>{{ min }}</p>
+    </div>
+  </div>
+</div>
