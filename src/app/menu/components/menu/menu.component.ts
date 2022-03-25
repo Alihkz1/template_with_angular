@@ -40,7 +40,7 @@ export class MenuComponent implements OnInit {
 
   constructor(private router: Router) {}
 
-  public onRouteTo(route: any) {
+  public onRouteTo(route: string): void {
     this.started = true;
     let interval = setInterval(() => {
       this.value += 5;

@@ -15,7 +15,7 @@ export class LandingPageComponent implements OnInit {
 
   ngOnInit(): void {}
 
-  public onStart() {
+  public onStart(): void {
     this.started = true;
     let interval = setInterval(() => {
       this.value += 5;

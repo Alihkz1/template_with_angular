@@ -17,7 +17,7 @@ export class SearchCityComponent implements OnInit {
 
   ngOnInit(): void {}
 
-  public onStart(): void {
+  public onSearch(): void {
     this.started = true;
     let interval = setInterval(() => {
       this.value += 5;
@@ -40,7 +40,7 @@ export class SearchCityComponent implements OnInit {
   }
 
   private onSuccess(): void {
-    this.router.navigate(['show-city-weather']);
+    this.router.navigate([ROUTING.SHOW_CITY_WEATHER]);
   }
 
   private onError(): void {}
