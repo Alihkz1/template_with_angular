@@ -3,15 +3,10 @@
 .mat-card__global {
   color: black;
   border-radius: 30px;
-
   background-color: rgb(245, 245, 245);
   font-family: "Zen Kurenaido", sans-serif;
-}
-
-.mat-card__global {
   animation-duration: 2s;
   animation-name: slide_to_left;
-  background-color: rgb(233, 159, 255);
 }
 
 @keyframes slide_to_left {
