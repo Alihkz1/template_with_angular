@@ -1,1 +1,43 @@
-<p>first-form works!</p>
+<div class="container">
+  <div class="col-12">
+    <mat-card class="mat-card__global">
+      <div class="row">
+        <div class="col-7">
+          <div class="col-7__content">
+            <form class="form">
+              <mat-form-field appearance="outline">
+                <mat-label>USerName</mat-label>
+                <input matInput [ngStyle]="{ width: '85%' }" /> </mat-form-field
+              ><br />
+              <mat-form-field appearance="outline">
+                <mat-label>Password</mat-label>
+                <input matInput type="password" [ngStyle]="{ width: '85%' }" />
+              </mat-form-field>
+            </form>
+            <mat-card-actions>
+              <button mat-raised-button (click)="onLogin()">
+                <p>Login</p>
+              </button>
+              <div *ngIf="started" class="col-7__progress-bar">
+                <mat-progress-bar
+                  mode="determinate"
+                  [value]="value"
+                  color="accent"
+                ></mat-progress-bar>
+              </div>
+            </mat-card-actions>
+          </div>
+        </div>
+        <div class="col-5">
+          <div class="img">
+            <img
+              mat-card-image
+              src="../../../../assets/svg/sign-in.svg"
+              alt="sign-in"
+            />
+          </div>
+        </div>
+      </div>
+    </mat-card>
+  </div>
+</div>

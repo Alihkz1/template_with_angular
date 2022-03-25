@@ -1,0 +1,69 @@
+.row {
+  margin: 100px;
+}
+
+.col-12 {
+  margin-top: 10%;
+}
+
+.mat-card__global {
+  border-radius: 10px;
+}
+
+.col-12 :hover {
+  background-color: rgb(233, 159, 255);
+}
+
+.col-7__content {
+  margin-top: 150px;
+}
+
+.col-7__progress-bar {
+  margin-top: 20px;
+  width: 60%;
+}
+
+.col-5 {
+  margin-top: 50px;
+}
+
+.img img {
+  max-height: 300px;
+}
+
+button {
+  background-color: rgba(13, 97, 194, 0.397);
+  width: 60%;
+  color: black;
+}
+
+h1 {
+  font-size: 50px;
+}
+
+p {
+  font-size: 30px;
+}
+
+@media screen and (max-width: 770px) {
+  .col-12 {
+    margin-top: 50%;
+  }
+
+  h1,
+  p {
+    font-size: 15px;
+  }
+
+  button {
+    width: 100px;
+  }
+
+  img {
+    width: 200px;
+  }
+
+  .col-7__progress-bar {
+    margin-top: 20px;
+  }
+}
