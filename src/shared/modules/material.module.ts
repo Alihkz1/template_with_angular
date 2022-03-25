@@ -20,6 +20,7 @@ import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatStepperModule } from '@angular/material/stepper';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatTooltipModule } from '@angular/material/tooltip';
+import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import { MatGridListModule } from '@angular/material/grid-list';
 import { MatExpansionModule } from '@angular/material/expansion';
@@ -55,6 +56,7 @@ const MODULES = [
   MatToolbarModule,
   MatTooltipModule,
   MatGridListModule,
+  MatSnackBarModule,
   MatCheckboxModule,
   MatExpansionModule,
   MatFormFieldModule,

@@ -1,24 +1,6 @@
 <div class="contanier">
   <div class="row">
-    <div *ngFor="let card of row1_cards" class="col-md-3 col-xs-12">
-      <mat-card
-        class="mat-card__global"
-        [ngStyle]="{ height: '200px', margin: '50px 0px' }"
-      >
-        <div class="row">
-          <div class="col-12">
-            <h3>{{ card.title }}</h3>
-          </div>
-        </div>
-        <hr />
-        <div class="row">
-          <div class="col-12">
-            <p>{{ card.count }}</p>
-          </div>
-        </div>
-      </mat-card>
-    </div>
-    <div class="col-md-3">
+    <div class="col-md-3 col-xs-3">
       <mat-card
         class="mat-card__global"
         [ngStyle]="{ height: '200px', margin: '50px 0px' }"
@@ -50,6 +32,24 @@
         <div class="row">
           <div class="col-12">
             <p>+{{ EarnedPrice }}</p>
+          </div>
+        </div>
+      </mat-card>
+    </div>
+    <div *ngFor="let card of row1_cards" class="col-md-3 col-xs-12">
+      <mat-card
+        class="mat-card__global"
+        [ngStyle]="{ height: '200px', margin: '50px 0px' }"
+      >
+        <div class="row">
+          <div class="col-12">
+            <h3>{{ card.title }}</h3>
+          </div>
+        </div>
+        <hr />
+        <div class="row">
+          <div class="col-12">
+            <p>{{ card.count }}</p>
           </div>
         </div>
       </mat-card>

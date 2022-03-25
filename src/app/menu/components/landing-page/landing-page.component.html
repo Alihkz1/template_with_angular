@@ -1,34 +1,74 @@
-<div class="container">
-  <div class="col-12">
-    <mat-card class="mat-card__global">
-      <div class="row">
-        <div class="col-7">
-          <div class="col-7__content">
-            <mat-card-title><h1>WELCOME</h1></mat-card-title>
-            <mat-card-actions>
-              <button mat-raised-button (click)="onStart()">
-                <p>start</p>
-              </button>
-              <div *ngIf="started" class="col-7__progress-bar">
-                <mat-progress-bar
-                  mode="determinate"
-                  [value]="value"
-                  color="accent"
-                ></mat-progress-bar>
-              </div>
-            </mat-card-actions>
-          </div>
+<section id="header">
+  <div class="contanier">
+    <div class="row">
+      <div class="col-md-10">
+        <h2>Welcome</h2>
+        <div class="row" [ngStyle]="{ 'margin-top': '10px' }">
+          <div class="col-md-12"><h1>Hope you enjoy !</h1></div>
         </div>
-        <div class="col-5">
-          <div class="img">
-            <img
-              mat-card-image
-              src="../../../../assets/svg/welcome.svg"
-              alt="welcome"
-            />
+        <div class="row" [ngStyle]="{ 'margin-top': '50px' }">
+          <button mat-stroked-button (click)="onStart()">Start</button>
+          <div *ngIf="started" class="progress-bar">
+            <mat-progress-bar
+              mode="determinate"
+              [value]="value"
+              color="primary"
+            ></mat-progress-bar>
           </div>
         </div>
       </div>
-    </mat-card>
+      <div class="col-md-2">
+        <img src="../../../../assets/svg/welcome.svg" alt="" />
+      </div>
+    </div>
+  </div>
+</section>
+<div class="contanier" [ngStyle]="{ margin: '50px' }">
+  <div class="row text-center">
+    <div class="col-md-4">
+      <h1 class="g-font">Great UI</h1>
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis
+        eligendi velit veniam exercitationem, animi culpa accusamus nihil porro
+        fugiat harum? Eveniet hic minima libero consequatur veniam nihil quaerat
+        praesentium commodi harum dolore, obcaecati debitis neque odit voluptas
+        eius fugit non iure suscipit. Ipsam natus delectus nostrum. Voluptate
+        accusantium officia veniam harum nostrum quae tenetur quisquam. Vero,
+        deserunt sunt. Animi beatae cum vero velit dicta numquam! Tenetur vel
+        mollitia maiores ea, sint distinctio aliquid laborum optio pariatur
+        quidem incidunt animi corrupti ratione delectus ex laboriosam
+        exercitationem aspernatur adipisci.
+      </p>
+    </div>
+    <div class="col-md-4">
+      <h1>Great UX</h1>
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis
+        eligendi velit veniam exercitationem, animi culpa accusamus nihil porro
+        fugiat harum? Eveniet hic minima libero consequatur veniam nihil quaerat
+        praesentium commodi harum dolore, obcaecati debitis neque odit voluptas
+        eius fugit non iure suscipit. Ipsam natus delectus nostrum. Voluptate
+        accusantium officia veniam harum nostrum quae tenetur quisquam. Vero,
+        deserunt sunt. Animi beatae cum vero velit dicta numquam! Tenetur vel
+        mollitia maiores ea, sint distinctio aliquid laborum optio pariatur
+        quidem incidunt animi corrupti ratione delectus ex laboriosam
+        exercitationem aspernatur adipisci.
+      </p>
+    </div>
+    <div class="col-md-4">
+      <h1>Great Performance</h1>
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis
+        eligendi velit veniam exercitationem, animi culpa accusamus nihil porro
+        fugiat harum? Eveniet hic minima libero consequatur veniam nihil quaerat
+        praesentium commodi harum dolore, obcaecati debitis neque odit voluptas
+        eius fugit non iure suscipit. Ipsam natus delectus nostrum. Voluptate
+        accusantium officia veniam harum nostrum quae tenetur quisquam. Vero,
+        deserunt sunt. Animi beatae cum vero velit dicta numquam! Tenetur vel
+        mollitia maiores ea, sint distinctio aliquid laborum optio pariatur
+        quidem incidunt animi corrupti ratione delectus ex laboriosam
+        exercitationem aspernatur adipisci.
+      </p>
+    </div>
   </div>
 </div>
