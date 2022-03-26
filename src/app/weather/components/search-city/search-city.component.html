@@ -3,7 +3,7 @@
     <mat-card class="mat-card__global">
       <div class="col-4">
         <div class="col-4__content">
-          <form class="form">
+          <form class="form" (ngSubmit)="onSearch()">
             <mat-form-field appearance="outline">
               <mat-label>City</mat-label>
               <input
