@@ -7,7 +7,7 @@
           <div class="col-md-12"><h1>Hope you enjoy !</h1></div>
         </div>
         <div class="row" [ngStyle]="{ 'margin-top': '50px' }">
-          <button mat-stroked-button (click)="onStart()">Start</button>
+          <button mat-stroked-button matTooltip="Start" (click)="onStart()">Start</button>
           <div *ngIf="started" class="progress-bar">
             <mat-progress-bar
               mode="determinate"

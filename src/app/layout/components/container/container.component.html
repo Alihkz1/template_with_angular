@@ -57,7 +57,12 @@
     </div>
     <div class="col-1">
       <div class="dark-mode__toggle">
-        <mat-slide-toggle [(ngModel)]="darkMode">
+        <mat-slide-toggle
+          class="example-button"
+          [(ngModel)]="darkMode"
+          matTooltip="Switch between themes ...!"
+          matTooltipClass="tooltip-blue"
+        >
           <mat-icon> light_mode </mat-icon></mat-slide-toggle
         >
       </div>
