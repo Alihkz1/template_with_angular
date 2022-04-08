@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 import { ROUTING } from 'src/shared/enums/routing.enum';
 
@@ -7,13 +7,11 @@ import { ROUTING } from 'src/shared/enums/routing.enum';
   templateUrl: './landing-page.component.html',
   styleUrls: ['./landing-page.component.scss'],
 })
-export class LandingPageComponent implements OnInit {
+export class LandingPageComponent {
   public value: number = 0;
   public started: boolean = false;
 
   constructor(private router: Router) {}
-
-  ngOnInit(): void {}
 
   public onStart(): void {
     this.started = true;

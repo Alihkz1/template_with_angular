@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 import { ROUTING } from 'src/shared/enums/routing.enum';
 
@@ -7,7 +7,7 @@ import { ROUTING } from 'src/shared/enums/routing.enum';
   templateUrl: './menu.component.html',
   styleUrls: ['./menu.component.scss'],
 })
-export class MenuComponent implements OnInit {
+export class MenuComponent {
   public value: number = 0;
   public started: boolean = false;
 
@@ -53,6 +53,4 @@ export class MenuComponent implements OnInit {
       }
     }, 50);
   }
-
-  ngOnInit(): void {}
 }

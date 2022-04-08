@@ -14,7 +14,7 @@ export class ContainerComponent implements OnInit {
 
   constructor(private router: Router) {}
 
-  @HostBinding('class') get themeMode() {
+  @HostBinding('class') get themeMode(): string {
     return this.darkMode ? 'dark-theme' : 'light-theme';
   }
 

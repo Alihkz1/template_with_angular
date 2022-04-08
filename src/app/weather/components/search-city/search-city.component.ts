@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 import { ROUTING } from 'src/shared/enums/routing.enum';
 import { WeatherService } from '../../shared/service/weather.service';
@@ -8,14 +8,12 @@ import { WeatherService } from '../../shared/service/weather.service';
   templateUrl: './search-city.component.html',
   styleUrls: ['./search-city.component.scss'],
 })
-export class SearchCityComponent implements OnInit {
+export class SearchCityComponent {
   public value: number = 0;
-  public started: boolean = false;
   public cityName: string = '';
+  public started: boolean = false;
 
   constructor(private router: Router, private weatherService: WeatherService) {}
-
-  ngOnInit(): void {}
 
   public onSearch(): void {
     this.started = true;
@@ -43,5 +41,7 @@ export class SearchCityComponent implements OnInit {
     this.router.navigate([ROUTING.SHOW_CITY_WEATHER]);
   }
 
-  private onError(): void {}
+  private onError(): void {
+    //show alert code here
+  }
 }
