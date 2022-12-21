@@ -17,12 +17,15 @@ export class WeatherService {
 
   public set setCityInfo(info: any) {
     let name = info['name'];
-    let feelsLike = info['main']['feels_like'];
-    let temp = info['main']['temp'];
-    let humidity = info['main']['humidity'];
-    let temp_min = info['main']['temp_min'];
-    let temp_max = info['main']['temp_max'];
-    let data = { name, feelsLike, temp, humidity, temp_min, temp_max };
+    const { temp, humidity, temp_min, temp_max, feels_like } = info?.main;
+    const data = {
+      name,
+      feelsLike: feels_like,
+      temp,
+      humidity,
+      temp_min,
+      temp_max,
+    };
     this.cityInfo$.next(data);
   }
 

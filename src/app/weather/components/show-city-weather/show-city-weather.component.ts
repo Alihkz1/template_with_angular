@@ -35,7 +35,7 @@ export class ShowCityWeatherComponent implements OnInit {
 
   private onGetCityInfo(): void {
     this.weatherService.cityInfo.subscribe((info) => {
-      if (info.length == 0) this.router.navigate([ROUTING.WEATHER]);
+      if (!info.length) this.router.navigate([ROUTING.WEATHER]);
       info = this.onConvertInfo(info);
       this.name = info?.name;
       this.feelsLike = info?.feelsLike;
